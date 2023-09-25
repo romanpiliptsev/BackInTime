@@ -1,0 +1,127 @@
+<resources>
+    <string name="app_name">Back In Time: 1970s Quiz</string>
+    <string name="guess_the_object">GUESS THE OBJECT</string>
+    <string name="button_play">Button play</string>
+    <string name="play">PLAY</string>
+    <string name="casual">CASUAL</string>
+    <string name="casual_mode_button">Casual mode button</string>
+    <string name="play_again">PLAY AGAIN</string>
+    <string name="play_again_button">Play again button</string>
+    <string name="answer_1">Answer 1</string>
+    <string name="answer_2">Answer 2</string>
+    <string name="answer_3">Answer 3</string>
+    <string name="answer_4">Answer 4</string>
+    <string name="next_button">Next button</string>
+    <string name="image_of_thing_from_70s">Image of thing from 70s</string>
+    <string name="heart">Heart</string>
+    <string name="result_of_the_game">You finished the game with the total score of %s!</string>
+    <string name="correct">Correct!</string>
+    <string name="wrong">Wrong!</string>
+    <string name="survival_mode_button">Survival mode button</string>
+    <string name="survival">SURVIVAL</string>
+    <string name="score">Score:</string>
+    <string name="_0">0</string>
+    <string name="bulb">Bulb</string>
+    <string name="only_the_correct_answer">Only the correct answer remains!</string>
+    <string name="not_enough_points">Not enough points (it costs 2)!</string>
+    <string name="game_over">You lost after spending all your hearts!</string>
+
+    <string-array name="question1_array">
+        <item>8-Tracks</item>
+        <item>Covers</item>
+        <item>Cassette</item>
+        <item>Floppies</item>
+    </string-array>
+
+    <string-array name="question2_array">
+        <item>Toaster</item>
+        <item>Massive coffeemaker</item>
+        <item>Sewing machine</item>
+        <item>Old microwave</item>
+    </string-array>
+
+    <string-array name="question3_array">
+        <item>Cream pot</item>
+        <item>Soup plate</item>
+        <item>Pan</item>
+        <item>Fondue pot</item>
+    </string-array>
+
+    <string-array name="question4_array">
+        <item>Massager</item>
+        <item>Pod chair</item>
+        <item>Round bed</item>
+        <item>Round chair</item>
+    </string-array>
+
+    <string-array name="question5_array">
+        <item>Healing lamp</item>
+        <item>Lava lamp</item>
+        <item>Algae aquarium</item>
+        <item>UV lamp</item>
+    </string-array>
+
+    <string-array name="question6_array">
+        <item>Radio</item>
+        <item>Alarm clock</item>
+        <item>Clock</item>
+        <item>Old computer</item>
+    </string-array>
+
+    <string-array name="question7_array">
+        <item>Super 8s</item>
+        <item>First Canon camera</item>
+        <item>Super 7s</item>
+        <item>First Nikon camera</item>
+    </string-array>
+
+    <string-array name="question8_array">
+        <item>Prayer service</item>
+        <item>Refectory</item>
+        <item>Open pantry</item>
+        <item>Colonial furniture</item>
+    </string-array>
+
+    <string-array name="question9_array">
+        <item>Cassette</item>
+        <item>Floppy</item>
+        <item>Record player</item>
+        <item>CD disk</item>
+    </string-array>
+
+    <string-array name="question10_array">
+        <item>Old TV</item>
+        <item>Old computer</item>
+        <item>Old monitor</item>
+        <item>Radio</item>
+    </string-array>
+
+    <string-array name="question11_array">
+        <item>Stereo System</item>
+        <item>Computer block</item>
+        <item>Recording studio</item>
+        <item>Speakers</item>
+    </string-array>
+
+    <string-array name="question12_array">
+        <item>Keyboard</item>
+        <item>Finger trainer</item>
+        <item>Typewriter</item>
+        <item>Morse code machine</item>
+    </string-array>
+
+    <string-array name="question13_array">
+        <item>Alarm clock</item>
+        <item>Radio</item>
+        <item>Clock</item>
+        <item>Column</item>
+    </string-array>
+
+    <string-array name="question14_array">
+        <item>Column</item>
+        <item>Oldest stereo system</item>
+        <item>Morse code machine</item>
+        <item>Radio</item>
+    </string-array>
+
+</resources>

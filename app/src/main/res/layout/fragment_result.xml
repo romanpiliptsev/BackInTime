@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:padding="32dp"
+    tools:context=".presentation.fragments.ResultFragment">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.52" />
+
+    <TextView
+        android:id="@+id/score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto_medium"
+        android:gravity="center"
+        android:paddingBottom="15dp"
+        android:textColor="@color/white"
+        android:textSize="27sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/button_play_again"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/gl"
+        tools:text="You finished the game with the total score of 6!" />
+
+    <ImageView
+        android:id="@+id/button_play_again"
+        android:layout_width="340dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="15dp"
+        android:contentDescription="@string/play_again_button"
+        android:src="@drawable/button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/score" />
+
+    <TextView
+        android:id="@+id/play_again"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto_medium"
+        android:text="@string/play_again"
+        android:textColor="@color/white"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/button_play_again"
+        app:layout_constraintEnd_toEndOf="@id/button_play_again"
+        app:layout_constraintStart_toStartOf="@id/button_play_again"
+        app:layout_constraintTop_toTopOf="@id/button_play_again" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

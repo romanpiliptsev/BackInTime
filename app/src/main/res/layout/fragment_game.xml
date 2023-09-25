@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".presentation.fragments.GameFragment">
+
+    <TextView
+        android:id="@+id/score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:fontFamily="@font/roboto_medium"
+        android:text="@string/_0"
+        android:textColor="@color/white"
+        android:textSize="23sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/score_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="3dp"
+        android:fontFamily="@font/roboto_medium"
+        android:text="@string/score"
+        android:textColor="@color/white"
+        android:textSize="23sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/score"
+        app:layout_constraintEnd_toStartOf="@id/score"
+        app:layout_constraintTop_toTopOf="@id/score" />
+
+    <ImageView
+        android:id="@+id/bulb"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_marginEnd="7dp"
+        android:layout_marginBottom="7dp"
+        android:contentDescription="@string/bulb"
+        android:src="@drawable/light"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/heart1"
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="21dp"
+        android:contentDescription="@string/heart"
+        android:src="@drawable/red_heart"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/heart2"
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="6dp"
+        android:contentDescription="@string/heart"
+        android:src="@drawable/red_heart"
+        app:layout_constraintStart_toEndOf="@id/heart1"
+        app:layout_constraintTop_toTopOf="@id/heart1" />
+
+    <ImageView
+        android:id="@+id/heart3"
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="6dp"
+        android:contentDescription="@string/heart"
+        android:src="@drawable/red_heart"
+        app:layout_constraintStart_toEndOf="@id/heart2"
+        app:layout_constraintTop_toTopOf="@id/heart1" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.17" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="340dp"
+        android:layout_height="265dp"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/gl">
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="340dp"
+            android:layout_height="265dp"
+            android:contentDescription="@string/image_of_thing_from_70s"
+            android:scaleType="centerCrop"
+            tools:src="@drawable/ic_launcher_background" />
+    </androidx.cardview.widget.CardView>
+
+    <ImageView
+        android:id="@+id/answer1_button"
+        android:layout_width="340dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="15dp"
+        android:contentDescription="@string/answer_1"
+        android:src="@drawable/button"
+        app:layout_constraintBottom_toTopOf="@id/answer2_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/card_view" />
+
+    <TextView
+        android:id="@+id/answer1_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto_medium"
+        android:textColor="@color/white"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/answer1_button"
+        app:layout_constraintEnd_toEndOf="@id/answer1_button"
+        app:layout_constraintStart_toStartOf="@id/answer1_button"
+        app:layout_constraintTop_toTopOf="@id/answer1_button"
+        tools:text="SMTH" />
+
+    <ImageView
+        android:id="@+id/answer2_button"
+        android:layout_width="340dp"
+        android:layout_height="64dp"
+        android:contentDescription="@string/answer_2"
+        android:src="@drawable/button"
+        app:layout_constraintBottom_toTopOf="@id/answer3_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/answer1_button" />
+
+    <TextView
+        android:id="@+id/answer2_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto_medium"
+        android:textColor="@color/white"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/answer2_button"
+        app:layout_constraintEnd_toEndOf="@id/answer2_button"
+        app:layout_constraintStart_toStartOf="@id/answer2_button"
+        app:layout_constraintTop_toTopOf="@id/answer2_button"
+        tools:text="SMTH" />
+
+    <ImageView
+        android:id="@+id/answer3_button"
+        android:layout_width="340dp"
+        android:layout_height="64dp"
+        android:contentDescription="@string/answer_3"
+        android:src="@drawable/button"
+        app:layout_constraintBottom_toTopOf="@id/answer4_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/answer2_button" />
+
+    <TextView
+        android:id="@+id/answer3_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto_medium"
+        android:textColor="@color/white"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/answer3_button"
+        app:layout_constraintEnd_toEndOf="@id/answer3_button"
+        app:layout_constraintStart_toStartOf="@id/answer3_button"
+        app:layout_constraintTop_toTopOf="@id/answer3_button"
+        tools:text="SMTH" />
+
+    <ImageView
+        android:id="@+id/answer4_button"
+        android:layout_width="340dp"
+        android:layout_height="64dp"
+        android:layout_marginBottom="20dp"
+        android:contentDescription="@string/answer_4"
+        android:src="@drawable/button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/answer3_button" />
+
+    <TextView
+        android:id="@+id/answer4_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto_medium"
+        android:textColor="@color/white"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/answer4_button"
+        app:layout_constraintEnd_toEndOf="@id/answer4_button"
+        app:layout_constraintStart_toStartOf="@id/answer4_button"
+        app:layout_constraintTop_toTopOf="@id/answer4_button"
+        tools:text="SMTH" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
